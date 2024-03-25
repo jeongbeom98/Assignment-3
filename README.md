@@ -44,7 +44,9 @@ db.movies.find(
 ).sort({ runtime: 1 })
 ```
 Query and Results Screenshot:
+
 ![image](https://github.com/jeongbeom98/Assignment-3/assets/103769156/b443e4b0-20dc-487d-afed-145fe0c08b77)
+
 ![image](https://github.com/jeongbeom98/Assignment-3/assets/103769156/cacd62ce-0577-4397-89c8-33513f4c1d4e)
 
 Query 2: Movies After Year 2014 with IMDb Rating Greater Than 9
@@ -66,7 +68,9 @@ db.movies.find(
 )
 ```
 Query and Results Screenshot:
+
 ![image](https://github.com/jeongbeom98/Assignment-3/assets/103769156/dbc088c3-fe0d-4eac-ad87-273b2027385c)
+
 ![image](https://github.com/jeongbeom98/Assignment-3/assets/103769156/321e0026-115f-4ef4-8b52-51f6cb7b1614)
 
 Conclusion
