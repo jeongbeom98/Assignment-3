@@ -42,12 +42,12 @@ db.movies.find(
     title: 1,
     year: 1
   }
-).sort({ runtime: 1 })
+).sort({ runtime: 1 })```
 Query and Results Screenshot:
 
 ###Query 2: Movies After Year 2014 with IMDb Rating Greater Than 9
 This query finds all movies released after the year 2014 with an IMDb rating greater than 9, including the title, year, and IMDb rating:
-db.movies.find(
+```db.movies.find(
   {
     $and: [
       { year: { $gt: 2014 } },
@@ -60,7 +60,7 @@ db.movies.find(
     year: 1,
     "imdb.rating": 1
   }
-)
+)```
 Query and Results Screenshot:
 
 Conclusion
