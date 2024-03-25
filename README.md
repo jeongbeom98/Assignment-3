@@ -27,7 +27,6 @@ Queries were executed within the embedded MongoDB Shell in MongoDB Compass. More
 
 ### Query 1: Movies with Runtime Greater Than 200 Minutes in Year 1983
 The following query was used to find all movies from 1983 with a runtime greater than 200 minutes, showing the runtime, title, and year fields sorted by runtime in increasing order:
-
 ```javascript
 db.movies.find(
   {
@@ -44,4 +43,29 @@ db.movies.find(
   }
 ).sort({ runtime: 1 })
 ```
-asdasd
+Query and Results Screenshot:
+
+Query 2: Movies After Year 2014 with IMDb Rating Greater Than 9
+This query finds all movies released after the year 2014 with an IMDb rating greater than 9, including the title, year, and IMDb rating:
+```javascript
+db.movies.find(
+  {
+    $and: [
+      { year: { $gt: 2014 } },
+      { "imdb.rating": { $gt: 9 } }
+    ]
+  },
+  {
+    _id: 0,
+    title: 1,
+    year: 1,
+    "imdb.rating": 1
+  }
+)
+```
+Query and Results Screenshot:
+
+Conclusion
+This assignment provided a comprehensive overview of MongoDB Atlas setup, MongoDB Community Edition installation, and executing queries within MongoDB Compass. The hands-on experience gained from running actual queries and managing database operations was invaluable.
+
+Please replace `path/to/your/screenshot.png`, `path/to/movies_runtime200_year1983.png`, and `path/to/movies_rating9_year2014.png` with the actual paths to your screenshots in your GitHub repository. Make sure to commit and push these screenshots along with your `Readme.md` file to your GitHub repository.
